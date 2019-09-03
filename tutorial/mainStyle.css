@@ -1,0 +1,315 @@
+body
+
+{
+	
+	background-color: white;
+
+	margin:0;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+header
+{
+    width:100%;
+    
+    margin:0;
+    
+    position:static;
+    
+    overflow:hidden;
+    
+    background-color: #537bbc;
+    
+    padding:1%;
+
+}
+header a
+{
+	padding:5%;
+
+	width:calc(90% - 2px);
+
+	border-style: solid;
+
+	border-color: white;
+
+	border-width:1px;
+
+	color:white;
+
+    
+	font-size: 100%;
+    
+	font-style:bold;
+    
+	text-decoration:none;
+}
+nav
+
+{
+
+	margin:0;
+
+	height: 100%;
+
+    width: 150px;
+    
+    max-height: 1024px;
+    
+    min-height: 524px;
+
+	padding: 0;
+
+	background-color: #2d2f39;
+
+	color:white;
+
+	position:fixed;
+
+	overflow:hidden;
+
+}
+
+main
+{
+    
+	position:static;
+    
+	width:calc(100% - 150px);
+    
+    max-height: 1024px;
+    
+    min-height: 524px;
+    
+    height:100%;
+
+    margin-left: 150px;
+    
+    font-size:100%;
+
+	float:left;
+    
+	padding:0;
+    
+    border:0;
+}
+
+#navlinks
+
+{
+	width:100%;
+
+	overflow:hidden;
+
+	border-width: 1px;
+
+`	padding:0;
+    
+	margin:0;
+    
+	margin-top:20%;
+}
+
+#navletter
+
+{
+
+	margin:2%;
+    
+    padding:5%;
+    
+    max-height: 200px;
+    
+    width: calc(100% - (2 * 5%));
+
+	font-size: 100%;
+
+	font-style: italic;
+}
+
+
+
+article
+{
+	padding:1%;
+	margin:0;
+}
+
+#navcontent
+{
+	padding:0;
+}
+
+#navlinks a
+{
+	color:white;
+
+	font-size: 100%;
+    
+	font-style:bold;
+    
+	text-decoration:none;
+}
+
+ul
+{
+
+	list-style-type: none;
+
+	margin:0;
+    
+	padding-left:0;
+    
+	text-align:center;
+}
+
+#navlinks li, li:visited
+
+{
+    box-sizing: border-box;
+        
+	background-color: #2d2f39;
+
+	width: 100%;
+
+	height:100%;
+    
+    padding-top: 10%;
+    
+    padding-bottom: 10%;
+    
+    padding-left: 5%;
+    
+    padding-right: 5%;
+
+	margin:0;
+    
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+
+}
+
+#navlinks li:hover, li:active
+{
+	background-color: #262938;
+}
+
+footer
+{
+	position: absolute;
+   	bottom: 1%;
+}
+.answer
+{
+	color:rgb(121,121,121);
+	font-style: italic;
+
+}
+
+
+
+#pink
+{
+    box-sizing: border-box;
+    background-color: hotpink;
+    border-top: 10px dotted red;
+    border-left: 5px dotted black;
+    border-bottom: 10px outset blue;
+    border-right: 5px inset blue;
+    font-family:Monoton;
+    font-size:20px;
+    border-radius:10%;
+    box-shadow: 10px 10px 50px inset;
+    letter-spacing: -2px;
+    height:100%;
+
+}
+#floatvid
+{
+    float:left;
+}
+#activism
+{
+    font-family:Verdana;
+    font-size: 20px;
+    color:white;
+    float:right;
+}
+#afloat
+{
+    float:left;
+}
+#none
+{
+    display:none;
+}
+#inline
+{
+    display:inline;
+}
+.floater
+{
+    height:200px;
+    width:300px;
+    float:right;
+    background-color:black;
+    color:white;
+}
+@keyframes example {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    75%  {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes color
+{
+    0%   {background-image:radial-gradient(hotpink 20%. aqua 70%);}
+    25%  {background-image:radial-gradient(black 20%. white 70%);}
+    50%  {background-image:radial-gradient(green 20%, aqua 70%);}
+    75%  {background-image:radial-gradient(blue 20%, aqua 70%);}
+    100% {background-image:radial-gradient(yellow 20%, black 70%);}
+}
+#jsButton
+{
+    margin:25%;
+    padding:5%;
+    padding-left:15%;
+    background-color:hotpink;
+    border: 12px solid mediumvioletred;
+    border-radius: 1em;
+}
+#jsButton:hover
+{
+    border-color: hotpink;
+    color:white;
+    cursor: pointer;
+}
+.dancingQueen
+{
+    background-color: black;
+    position:absolute;
+    width:10px;
+    height:10px;
+    margin:10px;
+    overflow: hidden;
+}
+#fun
+{
+    width:500px;
+    height:400px;
+    position:absolute;
+    visibility: hidden;
+}
+@keyframes scale
+{
+    0%   {transform: scale(1,1);}
+    25%  {transform: scale(50,20);}
+    50%  {transform: scale(40,50);}
+    75%  {transform: scale(20,50);}
+    100% {transform: scale(1,1);}
+}

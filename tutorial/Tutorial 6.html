@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<!--https://titan.csit.rmit.edu.au/~s3723825/Tutorial/-->
+
+	<title>Super cool website</title>
+
+	<link rel="stylesheet" href="mainStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+	<form action = "Tester.php" target="_self" method="post"/>
+    <script src="main.js"></script>
+    <script>
+        
+    </script>
+</head>
+
+<body>
+
+	<nav>
+		<div id ="navcontent">
+			<div id = "navletter">
+
+				These are Tutorial Files created throughout Web Programming
+
+				there is one for each week since week 3 and as I learn things the site will
+
+				change. There is a short explanation of each on each link.
+
+
+			</div>
+
+			<div id="navlinks">
+
+				<ul>
+                    
+					<a href="index.html"><li> Tutorial 3</li></a>
+
+                    <a href="Tutorial 4.html"><li> Tutorial 4 </li></a>
+
+					<a href="Tutorial 5.html"><li> Tutorial 5 </li></a>
+                    
+                    <a href="Tutorial 6.html"><li> Tutorial 6 </li></a>
+
+				</ul>
+
+			</div>
+
+			<footer>
+				Lachlan Gower 2018 &copy;
+			</footer>
+		</div>
+	</nav>
+
+	<main>
+		<header>
+        	<a class = "externallinks" href = "https://saturn.csit.rmit.edu.au/~s3723825/wp/index.html"> A1 </a>
+        	<a class = "externallinks" href = "https://www.w3schools.com"> W3Schools </a>
+        	<a class = "externallinks" href = "https://saturn.csit.rmit.edu.au/~e54061/wp/lectures/"> Lecture Slides </a>
+        	<a class = "externallinks" href = "https://rmit.instructure.com"> Canvas </a>
+    	</header>
+    	<article id = 'pink' onclick ="test()">
+            <br><br>
+			How do we set the background color?
+
+
+            What happens if you specify a background image and a background color together?<br><br>
+
+
+
+            How many different ways can we set a background image in an element?<br><br>
+
+
+
+
+            What's the difference between a linear gradient and a radial gradient? 
+<br><br>
+
+
+
+            How do we set the border thickness, style and color?<br><br>
+
+
+
+
+            How do we make corners rounded? What about drop-shadows?<br><br>
+           
+            What is the box model? What do the properties width, padding, border and margin refer to?<br><br>
+
+
+
+            Boxes have 4 sides (going clockwise: top, right, bottom, left), but many dimension related styles have a compact version where only 1, 2 or 3 values are specified. Explain how the browser interprets them.<br><br>
+
+
+
+            How wide will the element fixed-content be (shown below):<br><br>
+
+            #fixed-content<br><br>
+            {<br><br>
+                width: 100px;<br><br>
+                border: grey solid 5px;<br><br>
+                padding: 20px;<br><br>
+                margin: 20px;<br><br>
+            }<br><br>
+<br><br>
+            --180px
+<br><br>
+<br><br>
+            What difference does the new CSS3 box-sizing:border-box setting make to the box sizing model? <br><br>
+            
+            it includes the padding and border in the width/height<br><br>
+            
+            How wide will the element  be (shown below):<br><br>
+<br><br>
+#adaptable-content<br><br>
+{<br><br>
+  width:50%;<br><br>
+  min-width:600px;<br><br>
+  max-width:1800px;<br><br>
+  margin: 0 auto;<br><br>
+}
+<br><br>
+
+In particular, how large will it be displayed on a large screen (eg on a 27" iMac) or a small screen (eg an older "palette" monitor?)
+
+
+<br><br>
+
+
+How does the CSS3 calc() and box-sizing styles help us fine-tune box dimensions? <br><br>
+
+#fine-tuned-content<br><br>
+{<br><br>
+  box-sizing:border-box;<br><br>
+  width:calc(100% - 60px);<br><br>
+}
+
+
+<br><br>
+Activity 4: Floating Page Elements, Inline and Flexible Blocks<br><br>
+
+Block elements usually take up the entire width of the parent element, but there are times we want to float an image to the left or right (eg these mugs) and have text float around it (eg these paragraphs).<br><br>
+
+When we set an element to float:left or float:right any block elements that come after it are placed in the gaps. This might be what you want, but more often than not it isn't. Paragraphs will break up and page footers will look like inline elements (see below). <br><br>
+
+To "stop the floats", you will need an element that has the style clear:both to restore the normal flow layout.<br><br>
+http://www.w3schools.com/cssref/pr_class_float.asp<br><br>
+http://www.w3schools.com/cssref/pr_class_clear.asp <br><br>
+
+CSS3 allows us to have the best of both worlds with floating blocks. Elements with display:inline-block will have inline flow properties but retain a box shape.<br><br> 
+
+#keep-content-together<br><br>
+{<br><br>
+  display:inline-block;<br><br>
+}<br><br>
+<br><br>
+Internally, elements will not be reshaped and don't get squashed like the above paragraphs do.
+http://www.w3schools.com/cssref/pr_class_display.asp <br><br>
+
+A new advanced family of styles (supported in modern browsers only) is flex which allows you to create flexible elements that resize according to rules laid down by their parent element and their sibling elements. These styles are likely to dominate page layout design in the near future.
+http://www.w3schools.com/cssref/css3_pr_flex.asp<br><br>
+
+
+
+<br><br>
+Activity 5: Positioning
+<br><br>
+The default style for positioning is static. What does this mean? <br><br>
+
+
+<br><br>
+What other positioning styles are there? What happens to the original space that the element occupied in each case?<br><br>
+
+
+
+<br><br>
+How do top, bottom, left and right help us to adjust the position of a non-static element?<br><br>
+
+
+
+
+
+<br><br>
+Activity 6: Display and Visibility<br><br>
+
+To make elements "disappear" we have two options:<br><br>
+
+#gollum, #bilbo, #frodo, #harry, .friends-of-harry<br><br>
+{<br><br>
+  visibility: hidden;<br><br>
+  /* to make visible, use visibility: visible; */<br><br>
+}<br><br>
+#tardis<br><br>
+{<br><br>
+  display: none;<br><br>
+  /* to re-display, use display: block; OR inline-block; OR inline; etc */<br><br>
+}<br><br>
+<br><br>
+What is the difference between the two methods?<br><br><br><br>
+
+            <br><br><br><br>
+            <div class = "floater" onclick = "rotate()">I <br> poop  float</div><br>
+            <div id ="afloat"class = "floater">I <br>   float</div><br><br>
+            <marquee behavior = "alternate" scrollamount="100" scrolldelay="1"><div class = "floater">I   <br>  float</div></marquee>
+            <div id = "inline" class = "floater">I   <br>  float</div><br>
+                        <marquee scrollamount="500" scrolldelay="1"><video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></marquee>
+            <div id ="afloat" class = "floater">I <br>   float</div><br><br>
+            <div class = "floater">I   <br>  float</div>
+            <span id = "activism">STOP FLOAT 2018</span>
+            <div id = "none"class = "floater">I   <br> dont float</div><br>
+            
+
+            
+            
+            <br><br><br><br>
+
+		</article>
+	</main>
+
+</body>
+
+</html>

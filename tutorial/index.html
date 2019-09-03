@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<!--https://titan.csit.rmit.edu.au/~s3723825/Tutorial/-->
+
+	<title>Super cool website</title>
+
+	<link rel="stylesheet" href="mainStyle.css">
+
+	<form action = "Tester.php" target="_self" method="post"/>
+</head>
+
+<body>
+
+	<nav>
+		<div id ="navcontent">
+			<div id = "navletter">
+
+				These are Tutorial Files created throughout Web Programming
+
+				there is one for each week since week 3 and as I learn things the site will
+
+				change. There is a short explanation of each on each link.
+
+
+			</div>
+
+			<div id="navlinks">
+
+				<ul>
+
+					<a href="index.html"><li> Tutorial 3</li></a>
+
+                    <a href="Tutorial 4.html"><li> Tutorial 4 </li></a>
+
+					<a href="Tutorial 5.html"><li> Tutorial 5 </li></a>
+                    
+                    <a href="Tutorial 6.html"><li> Tutorial 6 </li></a>
+
+				</ul>
+
+			</div>
+
+			<footer>
+				Lachlan Gower 2018 &copy;
+			</footer>
+		</div>
+	</nav>
+
+    
+	<main>
+		<header>
+        	<a class = "externallinks" href = "https://saturn.csit.rmit.edu.au/~s3723825/wp/index.html"> A1 </a>
+        	<a class = "externallinks" href = "https://www.w3schools.com"> W3Schools </a>
+        	<a class = "externallinks" href = "https://saturn.csit.rmit.edu.au/~e54061/wp/lectures/"> Lecture Slides </a>
+        	<a class = "externallinks" href = "https://rmit.instructure.com"> Canvas </a>
+    	</header>
+    	<article>
+			<form action = "Tester.php" target="_self" method="post">
+
+				Name: <input type="text" name="name" value=""/><br/>
+
+				Password: <input type="password" name="password" value=""/><br/>
+
+				Rated: <input type="hidden" name="client-rating" value="2 stars"/><br/>
+
+				<!-- Radios -->
+
+				<input type="radio" name="gender" value="male"/> Male<br/>
+
+				<input type="radio" name="gender" value="female"/> Female<br/>
+
+				<input type="radio" name="gender" value="other"/> Other<br/>
+
+
+				<!-- Checkboxes -->
+
+				<input type="checkbox" name="seeks[]" value="male"/> Male<br/>
+
+				<input type="checkbox" name="seeks[]" value="female"/> Female<br/>
+
+				<input type="checkbox" name="seeks[]" value="other"/> Other<br/>
+
+			
+
+				<!--TextArea-->
+				<textarea name = "textarea" cols='80' rows='9'>
+This is where the textarea value is ...
+If you want to put text ... at these instructions!
+What else can I tell you? ... row and col settings.
+				</textarea><br/>
+
+				<!--DropDown Selectors-->
+				<select name='dropdown[]' size='1'>
+  					<option value=''>Please Select</option>
+  					<option value='s1234567'>Alice Liddell</option>
+  					<option value='s1234568'>Bob D&apos;Builder</option>
+  					<option value='s1234569'Carol Singers</option>
+				</select><br/>
+
+				<select name='combobox[]' size='3' multiple>
+  					<option value=''>Please Select</option>
+  					<option value='s1234567'>Alice Liddell</option>
+  					<option value='s1234568'>Bob D&apos;Builder</option>
+  					<option value='s1234569'>Carol Singers</option>
+				</select><br/>
+
+				<input type="submit" value="Submit"/>
+
+			</form>
+		</article>
+
+	</main>
+
+</body>
+
+</html>
